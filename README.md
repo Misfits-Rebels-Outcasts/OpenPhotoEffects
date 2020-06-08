@@ -1,7 +1,6 @@
 # OpenPhotoEffects
 A photo effects application and editor with real time visualization (UWP). 
 
-Open Photo Effects Editor
 
 The purpose of this project is to provide a basic template for a Photo Effect Editor in UWP.
 
