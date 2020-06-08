@@ -1,0 +1,56 @@
+﻿<Page
+    x:Class="BasicPhotoEditor.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BasicPhotoEditor"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:canvas="using:Microsoft.Graphics.Canvas.UI.Xaml"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid>
+        <NavigationView Name="NavigationMain" PaneDisplayMode="Top" ItemInvoked="NavigationView_ItemInvoked" Loaded="NavigationView_Loaded" Background="LightBlue" IsSettingsVisible="False" IsBackButtonVisible="Collapsed" SizeChanged="NavigationMain_SizeChanged">
+            <NavigationView.MenuItems>
+                <!--
+                <NavigationViewItem Icon="Play" Content="Sample" ToolTipService.ToolTip="Sample Image" Tag="Gallery" />                
+        
+                -->
+                <NavigationViewItem Icon="OpenFile" Content="Load Photo" ToolTipService.ToolTip="Load Photo" Tag="OpenFile" />
+                <NavigationViewItem Icon="Pictures" Content="Select Photo Effect" ToolTipService.ToolTip="Apply Effect" Tag="ApplyEffect" />
+                <NavigationViewItem x:Name="EditItem" Icon="Edit" Content="Edit Effect" ToolTipService.ToolTip="Edit Effect" Tag="EditEffect" Visibility="Collapsed"  />
+                <NavigationViewItem Icon="Save" Content="Save Photo" ToolTipService.ToolTip="Save Output" Tag="SaveFile" />
+                
+                <NavigationViewItem x:Name="SourceButton" Icon="Memo" Content="Source Code" ToolTipService.ToolTip="Source Code" Tag="SourceCode"  />
+            </NavigationView.MenuItems>
+            <NavigationView.PaneFooter>
+                <StackPanel Orientation="Horizontal">
+                    
+                    <TextBlock Name="EffectLabel" Text="Effect :" IsTapEnabled="False" Tag="EffectLabel" Margin="5,10,3,10"></TextBlock>
+                    
+                    <TextBlock Name="NameOfEffect" Text="Original" IsTapEnabled="False" Tag="NameOfTheEffect" Margin="3,10,10,10"></TextBlock>
+                </StackPanel>
+            </NavigationView.PaneFooter>
+            <Frame Name="ContentFrame">                
+            <StackPanel Orientation="Vertical">
+                    
+                        <canvas:CanvasControl x:Name="canvas2d" Draw="onCanvasDraw" ClearColor="LightBlue" Height="500" Margin="0,25,0,25" />
+                <!--
+                        <StackPanel Orientation="Horizontal">
+                            <Button Content="Load Photo"  Name="LoadImage" Click="LoadImage_Click" Margin="10,10,10,10" Height="30"></Button>
+                            <ComboBox Name="EffectsName" Margin="10,10,10,10"></ComboBox>
+           
+                        <Button Content="Apply Effect" Name="ApplyEffect" Click="ApplyEffect_Click" Margin="10,10,10,10" Height="30">  
+                        </Button>
+                        
+                            <Button Content="Effect" Name="GenThumbnails" Click="GenThumbnails_Click" Margin="10,10,10,10" Height="30">
+                            </Button>
+                            <Button Content="Save Output" Name="SaveImage" Click="SaveImage_Click" Margin="10,10,10,10" Height="30"></Button>
+                        </StackPanel>
+                -->
+                
+                <TextBox Name="TextConsole" Height="120" Margin="10,10,10,10" AcceptsReturn="True" TextWrapping="Wrap" IsReadOnly="True" ScrollViewer.IsVerticalRailEnabled="True" ScrollViewer.VerticalScrollBarVisibility="Auto" Visibility="Collapsed"></TextBox>
+                    </StackPanel>
+            </Frame>
+        </NavigationView>
+    </Grid>
+</Page>
