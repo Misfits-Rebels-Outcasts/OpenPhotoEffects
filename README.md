@@ -30,6 +30,15 @@ as a basic template that can be extended further with more effects and features 
 Experienced artists trained in a paint software (such as PhotoShop or Paint Shop Pro) may
 be adventurous enough to create their very own 'custom effect' app for listing on the app store.
 
+**Compiling the Project**
+
+To compile in Windows, after downloading the project, you may want to set the Solution Platform to x86 or x64.
+
+<kbd><img src="https://github.com/TechnoRiver/OpenPhotoEffects/blob/master/images/SolutionPlatform.png"></kbd>
+
+Please ensure the project has properly referenced [Win2D](https://github.com/microsoft/Win2D) before proceeding to compile.
+For example, some users may need to remove and re-add the reference to Win2D for it to work properly.
+
 **Flexibility in Simplicity - How it works**
 
 This tool takes an (0)Original size photo and resizes it to produce a (1)Preview and several (2)Thumbnails.
