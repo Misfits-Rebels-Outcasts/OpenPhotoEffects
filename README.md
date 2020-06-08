@@ -31,13 +31,13 @@ as a basic template that can be extended further with more effects and features 
 Experienced artists trained in a paint software (such as PhotoShop or Paint Shop Pro) may
 be adventurous enough to create their very own 'custom effect' app for listing on the app store.
 
-Flexibility in Simplicity - How it works 
+**Flexibility in Simplicity - How it works**
 
 This tool takes an (0)Original size photo and resizes it to produce a (1)Preview and several (2)Thumbnails.
 Whether it is (0), (1) or (2), the result is a bitmap (known as the workingBitmap) that can
 be applied with an effect. The programmer will just need to write a single function
 
-CanvasRenderTarget applyXXXXXEffects(CanvasBitmap workingBitmap)
+*CanvasRenderTarget applyXXXXXEffects(CanvasBitmap workingBitmap)*
 
 that will take as input the workingBitmap, and return a new bitmap of the same size.
 Doing so will add a new effect to the existing project. Many examples of how such an effect is written is provided in the source code.
@@ -47,13 +47,13 @@ to a Flyout of 'minimalistic' style, containing just sliders and on-off switches
 (invisible) TextConsole, which visibility can be turned on for displaying debugging messages.
 
 
-Related Projects
+**Related Projects**
 
 A related project by the same author that also employs Win2D extensively is the Open Screen Recorder at
 
 https://github.com/Misfits-Rebels-Outcasts/OpenScreenRecorder
 
-Future Plans
+**Future Plans**
 
 It is quite easy to modify the Photo Editor into a Video Editor using the same structure of the current project.
 To do this, the loading of image files can just simply be replaced with loading of movie files.
