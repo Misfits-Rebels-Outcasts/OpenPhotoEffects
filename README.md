@@ -4,6 +4,8 @@ A photo effects application and editor with real time visualization (UWP).
 
 The purpose of this project is to provide a basic template for a Photo Effect Editor in UWP.
 
+<kbd><img src="https://github.com/TechnoRiver/OpenPhotoEffects/blob/master/images/OpenPhotoEffects.png"></kbd>
+
 By taking advantage of Win2D's capability for processing images very rapidly using GPU and video memory,
 this app allows real time update of imaging effects. The user will be able visualize 
 immediate change to the original photo as he or she works on the slider to modify the parameters
@@ -13,11 +15,15 @@ This project provides the basic features for loading a photo or image, applying 
 It also supports thumbnails, so that the user can see the output of each effect before applying it
 to the photo. 
 
+<kbd><img src="https://github.com/TechnoRiver/OpenPhotoEffects/blob/master/images/PhotoEffects.png"></kbd>
+
 At this initial stage of the project, just a few effects have been implemented. However, these are sufficient 
 for basic photo touch up such as changing the image temperature, tints , highlights and shadows.
 
 Furthermore, a few advanced effects like edge detection, 3D lighting , posterization are also included, to
 demonstrate some of the interesting stuff that may be produced with just a few lines of code.
+
+<kbd><img src="https://github.com/TechnoRiver/OpenPhotoEffects/blob/master/images/PhotoEffectsEditor.png"></kbd>
 
 The author believes this UWP Opensource Photo Editor will benefit many, especially the following groups.
 
