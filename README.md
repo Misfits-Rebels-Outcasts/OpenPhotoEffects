@@ -39,7 +39,7 @@ be adventurous enough to create their very own 'custom effect' app for listing o
 
 **Compiling the Project**
 
-To compile the project, after downloading the zip file in Windows, you may want to set the Solution Platform to x86 or x64.
+To compile the project in Visual Studio, after downloading the zip file to Windows, you may want to set the Solution Platform to x86 or x64.
 
 <kbd><img src="https://github.com/TechnoRiver/OpenPhotoEffects/blob/master/images/SolutionPlatform.png"></kbd>
 
