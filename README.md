@@ -1,6 +1,8 @@
 # OpenPhotoEffects
 A photo effects application and editor with real time visualization (UWP). 
 
+This app is listed on Microsoft Store and may be downloaded at
+https://www.microsoft.com/store/apps/9n5qzpw70rvx
 
 The purpose of this project is to provide a basic template for a Photo Effect Editor in UWP.
 
